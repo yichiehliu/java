@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <h1>歡迎使用105人力公司網站來登入您的個人資料(*表示可以複選)</h1>
+    <p></p>
+    <form name="loginForm" method="post" action="DataUploader">
+
+        <label for="username">姓名：</label>
+        <!-- default size is 20 -->
+        <input type="text" id="username" name="username"></p>
+
+        <label for="address">住址：</label>
+        <input type="text" id="address" name="address" size="20"></p>
+
+
+        <label for="phonenumber">電話：</label>
+        <input type="tel" id="phonenumber" name="phonenumber" maxlength="12" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"></p>
+
+        <label for="birthday">生日：</label>
+        <input type="date" id="birthday" name="birthday"></p>
+
+        <!-- label bind with input 顯示選項 ， 如果要用一個選項組，語意上會用field set + legend -->
+        <label for="education">學歷：</label>
+        <input type="radio" id="education" name="education" value="高中職">高中職
+        <input type="radio" id="education" name="education" value="五專">五專
+        <input type="radio" id="education" name="education" value="四技二專">四技二專
+        <input type="radio" id="education" name="education" value="大學">大學
+        <input type="radio" id="education" name="education" value="研究所">研究所</p>
+
+
+        <label for="sports">運動：*
+            <input type="checkbox" id="basketball" name="sports" value="籃球">籃球
+            <input type="checkbox" id="swimming" name="sports" value="游泳">游泳
+            <input type="checkbox" id="tennis" name="sports" value="網球">網球
+            <input type="checkbox" id="biking" name="sports" value="單車">單車
+            <input type="checkbox" id="jogging" name="sports" value="跑步">跑步</p>
+        </label>
+
+        <label for="hobby">靜態休閒：*</label>
+        <!-- <input type="text" id="hobby" name="hobby"><br> -->
+        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+        <select id="hobby" name="hobby" multiple size="3">
+            <option value="閱讀">閱讀</option>
+            <option value="看電影">看電影</option>
+            <option value="看電視">看電視</option>
+            <option value="看漫畫">看漫畫</option>
+            <option value="發呆">發呆</option>
+        </select>
+        </p>
+        <!-- 、、、發呆、 -->
+
+        <label for="autobiography">自傳：</label>
+        <!-- <input type="textarea" id="autobiography" name="autobiography"> -->
+        <textarea name="autobiography" rows="5" cols="60">
+
+        </textarea>
+        </p>
+
+        <!-- <p></p> -->
+        <!-- <p></p>
+        姓名: <input type="text" name="username" />
+        <p></p>
+        姓名: <input type="text" name="username" />
+        <p></p>
+        密碼: <input type="password" name="password" />
+        <p></p> -->
+
+
+        <input type="reset" value="重設">
+        <input type="submit" value="送出">
+    </form>
+
+</body>
+
+</html>
